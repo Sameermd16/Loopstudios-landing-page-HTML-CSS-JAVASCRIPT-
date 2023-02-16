@@ -3,19 +3,214 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Loopstudios landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  About
+
+
+  <header class="desktop-header">
+    <div class="desktop-header-flex">
+      <div class="desktop-logo">
+        <img src="images/logo.svg" alt="">
+      </div>
+      <div class="nav-links">
+        <div class="link">
+          <a href="#">About</a>
+        </div>
+        <div class="link">
+          <a href="#">Careers</a>
+        </div>
+        <div class="link">
+          <a href="#">Events</a>
+        </div>
+        <div class="link">
+          <a href="#">Products</a>
+        </div>
+        <div class="link">
+          <a href="#">Support</a>
+        </div>
+      </div>
+    </div>
+    <div class="immersive-div">
+      <div class="immersive-text">
+        <h1>  Immersive experiences that deliver    </h1>
+      </div>
+    </div>
+  </header>
+  <header class="mobile-header">
+    <div class="mobile-header-flex">
+      <div class="mobile-logo">
+        <img src="images/logo.svg" alt="">
+      </div>
+      <div class="hamburger" id="hamburger">
+        <img src="images/icon-hamburger.svg" alt="">
+      </div>
+    </div>
+    <div class="mobile-immersive-div">
+      <div class="mobile-immersive-text">
+        <h1>  Immersive experiences that deliver    </h1>
+      </div>
+    </div>
+  </header>
+  <section class="mobile-nav opacity-none" id="mobile-nav">
+    <div class="mobile-nav-header">
+      <div class="menu-logo">
+        <img src="images/logo.svg" alt="">
+      </div>
+      <div class="menu-close" id="menu-close">
+        <img src="images/icon-close.svg" alt="">
+      </div>
+    </div>
+    <div class="mobile-nav-links">
+        <a href="#">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Events</a>
+        <a href="#">Products</a>
+        <a href="#">Support</a>
+    </div>
+  </section>
+  <main>
+    <div class="vr-div">
+      <div class="vr-pic-div">
+        <picture>
+          <source srcset="images/desktop/image-interactive.jpg" media="(min-width: 651px)" width="100%">
+          <source srcset="images/mobile/image-interactive.jpg" media="(max-width: 650px)" width="100%">
+          <img src="images/desktop/image-interactive.jpg" alt="vr pic">
+        </picture>
+      </div>
+      <div class="vr-text-div">
+        <p> The leader in interactive VR</p>
+        <p>Founded in 2011, Loopstudios has been producing world-class virtual reality 
+          projects for some of the best companies around the globe. Our award-winning 
+          creations have transformed businesses through digital experiences that bind 
+          to their brand.
+        </p>
+      </div>
+    </div>
+    
+    <div class="creations-div">
+      <p>our creations</p>
+      <button>see all</button>
+    </div>
+    <section class="pics-grid">
+      <div class="grid">
+        <picture>
+          <source srcset="images/desktop/image-deep-earth.jpg" media="(min-width: 651px)">
+          <source srcset="images/mobile/image-deep-earth.jpg" media="(max-width: 650px)">
+          <img src="images/desktop/image-deep-earth.jpg" alt="">
+        </picture>
+      </div>
+      <div class="grid">
+        <picture>
+          <source srcset="images/desktop/image-night-arcade.jpg" media="(min-width: 651px)">
+          <source srcset="images/mobile/image-night-arcade.jpg" media="(max-width: 650px)">
+          <img src="images/desktop/image-night-arcade.jpg" alt="">
+        </picture>
+      </div>
+      <div class="grid">
+        <picture>
+          <source srcset="images/desktop/image-soccer-team.jpg" media="(min-width: 651px)">
+          <source srcset="images/mobile/image-soccer-team.jpg" media="(max-width: 650px)">
+          <img src="images/desktop/image-soccer-team.jpg" alt="">
+        </picture>
+      </div>
+      <div class="grid">
+        <picture>
+          <source srcset="images/desktop/image-grid.jpg" media="(min-width: 651px)">
+          <source srcset="images/mobile/image-grid.jpg" media="(max-width: 650px)">
+          <img src="images/desktop/image-grid.jpg" alt="">
+        </picture>
+      </div>
+      <div class="grid">
+        <picture>
+          <source srcset="images/desktop/image-from-above.jpg" media="(min-width: 651px)">
+          <source srcset="images/mobile/image-from-above.jpg" media="(max-width: 650px)">
+          <img src="images/desktop/image-from-above.jpg" alt="">
+        </picture>
+      </div>
+      <div class="grid">
+        <picture>
+          <source srcset="images/desktop/image-pocket-borealis.jpg" media="(min-width: 651px)">
+          <source srcset="images/mobile/image-pocket-borealis.jpg" media="(max-width: 650px)">
+          <img src="images/desktop/image-pocket-borealis.jpg" alt="">
+        </picture>
+      </div>
+      <div class="grid">
+        <picture>
+          <source srcset="images/desktop/image-curiosity.jpg" media="(min-width: 651px)">
+          <source srcset="images/mobile/image-curiosity.jpg" media="(max-width: 650px)">
+          <img src="images/desktop/image-curiosity.jpg" alt="">
+        </picture>
+      </div>
+      <div class="grid">
+        <picture>
+          <source srcset="images/desktop/image-fisheye.jpg" media="(min-width: 651px)">
+          <source srcset="images/mobile/image-fisheye.jpg" media="(max-width: 650px)">
+          <img src="images/desktop/image-fisheye.jpg" alt="">
+        </picture>
+      </div>
+      
+    </section>
+  </main>
+  <footer>
+    <div class="first-div">
+      <div class="logo-footer">
+        <img src="images/logo.svg" alt="">
+      </div>
+      <div class="about-links">
+        <div class="link">
+          <a href="#">About</a>
+        </div>
+        <div class="link">
+          <a href="#">Careers</a>
+        </div>
+        <div class="link">
+          <a href="#">Events</a>
+        </div>
+        <div class="link">
+          <a href="#">Products</a>
+        </div>
+        <div class="link">
+          <a href="#">Support</a>
+        </div>
+        
+      </div>
+    </div>
+    <div class="second-div">
+      <div class="social-div">
+        <div class="link">
+          <a href="#"><ion-icon name="logo-facebook" class="social-icon"></ion-icon></a>
+        </div>
+        <div class="link">
+          <a href="#"><ion-icon name="logo-twitter" class="social-icon"></ion-icon></a>
+        </div>
+        <div class="link">
+          <a href="#"><ion-icon name="logo-pinterest" class="social-icon"></ion-icon></a>
+        </div>
+        <div class="link">
+          <a href="#"><ion-icon name="logo-instagram" class="social-icon"></ion-icon></a>
+        </div>
+
+      </div>
+      <p>© 2021 Loopstudios. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+  <!-- About
   Careers
   Events
   Products
@@ -49,11 +244,15 @@
   Products
   Support
 
-  © 2021 Loopstudios. All rights reserved.
+  © 2021 Loopstudios. All rights reserved. -->
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
